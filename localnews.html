@@ -1,10 +1,10 @@
-```html
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Global News Hub | Local News</title>
+   
+    
+    <title>BDASHOM News Hub | Local News</title>
 
     <style>
 
@@ -45,11 +45,6 @@
 
         .banner img{
             width:100%;
-            max-height:400px;
-        }
-
-        .banner h2{
-            color:#003366;
         }
 
         .news-container{
@@ -58,10 +53,34 @@
             padding:20px;
         }
 
+        .breaking{
+            background:red;
+            color:white;
+            display:inline-block;
+            padding:8px 15px;
+            font-weight:bold;
+            margin-bottom:15px;
+        }
+
+        .featured-story{
+            background:white;
+            padding:20px;
+            border-radius:5px;
+            margin-bottom:30px;
+        }
+
+        .featured-story h2{
+            color:#003366;
+        }
+
+        .featured-story p{
+            line-height:1.8;
+        }
+
         .news-card{
             background:white;
-            margin-bottom:20px;
             padding:15px;
+            margin-bottom:20px;
             border-radius:5px;
         }
 
@@ -74,9 +93,8 @@
             color:white;
             display:inline-block;
             padding:5px 10px;
-            margin-bottom:10px;
             border-radius:3px;
-            font-size:14px;
+            margin-bottom:10px;
         }
 
         .read-more{
@@ -86,10 +104,6 @@
             text-decoration:none;
             display:inline-block;
             margin-top:10px;
-        }
-
-        .read-more:hover{
-            background:#0055aa;
         }
 
         footer{
@@ -120,8 +134,8 @@
 
     <nav>
         <a href="index.html">Home</a>
-        <a href="local-news.html">Local News</a>
-        <a href="international-news.html">International News</a>
+        <a href="localnews.html">Local News</a>
+        <a href="internationalnews.html">International News</a>
         <a href="entertainment.html">Entertainment</a>
         <a href="sports.html">Sports</a>
     </nav>
@@ -130,33 +144,98 @@
 
     <section class="banner">
 
-        <img src="https://picsum.photos/1000/400?4" alt="Nigeria News">
+        <img src="img_files/localnews_pic.jpg"Local News">
 
         <h2>Nigerian Local News</h2>
 
-        <p>
-            Stay updated with the latest developments from across Nigeria.
-        </p>
+        <p>Latest stories and developments from across Nigeria.</p>
 
     </section>
 
-    <!-- News Section -->
+    <!-- Main News Content -->
 
     <section class="news-container">
 
-        <h2>Top Stories in Nigeria</h2>
+        <div class="breaking">
+            BREAKING NEWS
+        </div>
+
+        <div class="featured-story">
+
+            <h2>Anxiety Grows as Families Await News on 46 Kidnapped Victims in Oyo State</h2>
+
+            <p>
+                Residents of communities in Oriire Local Government Area of
+                Oyo State remain deeply concerned following the abduction of
+                46 people, including schoolchildren and teachers.
+            </p>
+
+            <p>
+                According to reports, armed men stormed schools within the
+                affected communities and forced pupils and staff into nearby
+                forest areas. The incident has sparked fear among parents,
+                community leaders, and education stakeholders.
+            </p>
+
+            <p>
+                Witnesses described scenes of panic as students and teachers
+                attempted to flee. Local residents have called on security
+                agencies to intensify rescue efforts and ensure the safe
+                return of all victims.
+            </p>
+
+            <p>
+                Security personnel have reportedly launched search operations
+                while authorities continue investigations into the attack.
+                Community leaders have urged residents to remain calm and
+                cooperate with security agencies.
+            </p>
+
+            <p>
+                The incident has reignited concerns about school security
+                and the safety of students in rural communities across the
+                country. Education advocates have called for stronger
+                protection measures around schools.
+            </p>
+
+            <p>
+                Families of the victims continue to wait anxiously for
+                positive developments while government officials assure the
+                public that efforts are ongoing to secure their release.
+            </p>
+
+        </div>
+
+        <h2>More Local News</h2>
 
         <div class="news-card">
 
-            <span class="category">Politics</span>
+            <span class="category">Lagos</span>
 
-            <img src="https://picsum.photos/600/300?11" alt="Politics">
+            <img src="img_files/lagos.jpg" alt="Lagos">
 
-            <h3>Federal Government Announces New Economic Policies</h3>
+            <h3>Lagos State Expands Public Transportation Network</h3>
 
             <p>
-                The Federal Government has introduced new measures aimed at
-                boosting economic growth and attracting foreign investment.
+                State authorities have announced plans to improve mobility
+                through new bus terminals and road upgrades.
+            </p>
+
+            <a href="#" class="read-more">Read More</a>
+
+        </div>
+
+        <div class="news-card">
+
+            <span class="category">Abuja</span>
+
+            <img src="img_files/abuja.jpg" alt="Abuja">
+
+            <h3>FCT Launches New Urban Development Initiative</h3>
+
+            <p>
+                Officials say the project will improve infrastructure and
+                housing across key districts.
             </p>
 
             <a href="#" class="read-more">Read More</a>
@@ -167,13 +246,13 @@
 
             <span class="category">Education</span>
 
-            <img src="https://picsum.photos/600/300?12" alt="Education">
+            <img src="https://picsum.photos/600/300?13" alt="Education">
 
-            <h3>Universities Expand Digital Learning Platforms</h3>
+            <h3>Universities Adopt New Digital Learning Tools</h3>
 
             <p>
-                Several Nigerian universities are investing in technology
-                to improve online learning opportunities for students.
+                Institutions continue to integrate technology into teaching
+                and learning environments.
             </p>
 
             <a href="#" class="read-more">Read More</a>
@@ -184,30 +263,13 @@
 
             <span class="category">Business</span>
 
-            <img src="https://picsum.photos/600/300?13" alt="Business">
+            <img src="https://picsum.photos/600/300?14" alt="Business">
 
-            <h3>Lagos Remains Nigeria's Leading Business Hub</h3>
-
-            <p>
-                Entrepreneurs continue to establish startups in Lagos as
-                the city attracts local and international investors.
-            </p>
-
-            <a href="#" class="read-more">Read More</a>
-
-        </div>
-
-        <div class="news-card">
-
-            <span class="category">Infrastructure</span>
-
-            <img src="https://picsum.photos/600/300?14" alt="Road Construction">
-
-            <h3>Major Road Construction Projects Progress Nationwide</h3>
+            <h3>Small Businesses Receive Support Through New Grants</h3>
 
             <p>
-                New road networks are expected to improve transportation
-                and support economic activities across states.
+                Entrepreneurs across Nigeria are expected to benefit from
+                newly announced funding programmes.
             </p>
 
             <a href="#" class="read-more">Read More</a>
@@ -218,13 +280,13 @@
 
             <span class="category">Health</span>
 
-            <img src="https://picsum.photos/600/300?15" alt="Healthcare">
+            <img src="https://picsum.photos/600/300?15" alt="Health">
 
-            <h3>Healthcare Centres Receive New Medical Equipment</h3>
+            <h3>Primary Healthcare Centres Receive Equipment Upgrade</h3>
 
             <p>
-                Public hospitals in several states have received
-                upgraded equipment to improve patient care.
+                Several healthcare facilities have been equipped with modern
+                medical tools to improve patient care.
             </p>
 
             <a href="#" class="read-more">Read More</a>
@@ -237,11 +299,11 @@
 
             <img src="https://picsum.photos/600/300?16" alt="Technology">
 
-            <h3>Nigerian Tech Startups Continue to Attract Funding</h3>
+            <h3>Nigerian Startups Continue to Attract Investors</h3>
 
             <p>
-                The technology sector remains one of the fastest-growing
-                industries in Nigeria.
+                The country's growing technology ecosystem remains a major
+                attraction for local and foreign investors.
             </p>
 
             <a href="#" class="read-more">Read More</a>
@@ -260,7 +322,7 @@
             <a href="#">Privacy Policy</a>
         </p>
 
-        <p>&copy; 2026 BDASHOM News Hub. All Rights Reserved.</p>
+        <p>&copy; 2026 Global News Hub. All Rights Reserved.</p>
 
     </footer>
 
